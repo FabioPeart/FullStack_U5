@@ -1,4 +1,9 @@
 <h1>Products#index</h1>
+
+<h3> <%= "Total Products: #{@products_total} " %> </h3>
+<h3> <%= "Average price of produts: #{'%.2f'% @products_average_price} " %> </h3>
+<h3> <%= "Quantity of stock: #{@products_stock_summed} " %> </h3>
+
 <% @products.each do |prod| %>
 <p><%= "Title: #{prod.title} " %> </p>
 <%end%>
